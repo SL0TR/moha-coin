@@ -1,1 +1,1 @@
-# SL0TR-Coin is a Coin system based on Block Chain.
+# mohaCoin is a Coin system based on Block Chain.

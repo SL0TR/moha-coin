@@ -6,8 +6,8 @@ const { BlockChain, Block } = require('./server/block-chain');
 app.get('/', (req, res) => res.send('You are on the root route :D'));
 
 app.get('/blockchain', (req, res) => {
-  let sl0trCoin = new BlockChain();
-  res.send(sl0trCoin.getBlockChain());
+  let mohaCoin = new BlockChain();
+  res.send(mohaCoin.getBlockChain());
 
 });
 
