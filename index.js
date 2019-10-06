@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 const { BlockChain, Block } = require('./server/block-chain');
-console.log(require('./server/block-chain'))
 
 app.get('/', (req, res) => res.send('You are on the root route :D'));
 
