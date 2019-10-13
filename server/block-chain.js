@@ -41,6 +41,23 @@ class BlockChain {
     this.blockChain.push(newBlock);
   }
 
+  isChainValid() {
+    for(let i = 1;  i < this.blockChain.length; i++) {
+      const currentBlock = this.blockChain[i];
+      const prevBlock = this.blockChain[i - 1];
+
+      if(currentBlock.hash !== currentBlock.calculateHash()) {
+        return false;
+      }
+
+      if(currentBlock.prevHash !== prevBlock.hash) {
+        return false;
+      }
+
+      return true;
+    }
+  }
+
 }
 
 module.exports = {
