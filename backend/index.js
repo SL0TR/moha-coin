@@ -1,18 +1,23 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const { BlockChain, Block } = require('./server/block-chain');
+const PORT = 4000;
+
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-const PORT = 3000;
 
 let mohaCoin = new BlockChain();
 
 app.get('/', (req, res) => res.send('You are on the root route :D'));
 
-app.post('/add-block', (req, res) => {
+app.post('/blockchain', (req, res) => {
   const { body: blockData } = req;
 
-  mohaCoin.addBlock( new Block(blockData));
+  const {index, timeStamp, data } = blockData;
+
+  mohaCoin.addBlock( new Block(index, timeStamp, data));
   
   // mutate data
   // mohaCoin.blockChain[1].data = { amount: 33 };
