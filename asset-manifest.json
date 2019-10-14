@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/moha-coin/static/js/main.7d81ef93.chunk.js",
+    "main.js.map": "/moha-coin/static/js/main.7d81ef93.chunk.js.map",
+    "runtime-main.js": "/moha-coin/static/js/runtime-main.6b65cea1.js",
+    "runtime-main.js.map": "/moha-coin/static/js/runtime-main.6b65cea1.js.map",
+    "static/css/2.0624914a.chunk.css": "/moha-coin/static/css/2.0624914a.chunk.css",
+    "static/js/2.fad768f2.chunk.js": "/moha-coin/static/js/2.fad768f2.chunk.js",
+    "static/js/2.fad768f2.chunk.js.map": "/moha-coin/static/js/2.fad768f2.chunk.js.map",
+    "index.html": "/moha-coin/index.html",
+    "precache-manifest.baf0c89696c8bfa990cd4217b111eb2e.js": "/moha-coin/precache-manifest.baf0c89696c8bfa990cd4217b111eb2e.js",
+    "service-worker.js": "/moha-coin/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/moha-coin/static/css/2.0624914a.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b65cea1.js",
+    "static/css/2.0624914a.chunk.css",
+    "static/js/2.fad768f2.chunk.js",
+    "static/js/main.7d81ef93.chunk.js"
+  ]
+}
