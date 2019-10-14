@@ -2,8 +2,7 @@ const SHA256 = require('crypto-js/sha224');
 
 class Block {
 
-  constructor(index,timeStamp, data, prevHash = '') {
-      this.index = index;
+  constructor(timeStamp, data, prevHash = '') {
       this.timeStamp = timeStamp;
       this.data = data;
       this.prevHash = prevHash;
@@ -11,7 +10,7 @@ class Block {
   }
 
   calculateHash() {
-    return SHA256(this.index + this.prevHash + this.timeStamp + JSON.stringify(this.data)).toString();
+    return SHA256(this.prevHash + this.timeStamp + JSON.stringify(this.data)).toString();
   }
 
 }
@@ -24,7 +23,7 @@ class BlockChain {
   }
 
   createGenesisBlock() {
-    return new Block(0, '01/01/0001', 'The Genesis block! D:', 'empty');
+    return new Block('01/01/0001', { amount: 100 }, 'empty');
   }
 
   getBlockChain() {

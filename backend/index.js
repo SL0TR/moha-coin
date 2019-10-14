@@ -15,9 +15,9 @@ app.get('/', (req, res) => res.send('You are on the root route :D'));
 app.post('/blockchain', (req, res) => {
   const { body: blockData } = req;
 
-  const {index, timeStamp, data } = blockData;
+  const {timeStamp, data } = blockData;
 
-  mohaCoin.addBlock( new Block(index, timeStamp, data));
+  mohaCoin.addBlock( new Block(timeStamp, data));
   
   // mutate data
   // mohaCoin.blockChain[1].data = { amount: 33 };
@@ -33,7 +33,6 @@ app.post('/blockchain', (req, res) => {
 
 app.get('/blockchain', (req, res) => {
   res.send(mohaCoin.getBlockChain());
-
 });
 
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));

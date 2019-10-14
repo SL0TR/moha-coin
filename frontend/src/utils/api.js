@@ -8,7 +8,7 @@ export default {
       // getOne: ({ id }) => axios.get(`${url}/${id}`),
       getAll: () => axios.get(blockChainUrl),
       // update: (toUpdate) =>  axios.put(url,toUpdate),
-      create: toCreate => axios.put(blockChainUrl, toCreate)
+      create: toCreate => axios.post(blockChainUrl, toCreate)
       // delete: ({ id }) =>  axios.delete(`${url}/${id}`)
     };
   }

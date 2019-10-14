@@ -2,24 +2,26 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import api from "../utils/api";
 
-export default function AddCoin() {
-  const [coinData, setCoinData] = useState({});
-  const [amount, setAmount] = useState({});
+export default function AddCoin({ fetchBlockChain }) {
+  const [amount, setAmount] = useState("");
 
   const registerCoin = async e => {
     e.preventDefault();
     const now = new Date();
     const date = `${now.getDate()}/${now.getMonth() + 1}/${now.getFullYear()}`;
-    const data = {
-      index: 2,
+    const blockData = {
       timeStamp: date,
-      amount
+      data: {
+        amount
+      }
     };
 
-    setCoinData(data);
+    const { data } = await api.blockChain().create(blockData);
 
-    const { data: res } = await api.blockChain().create(coinData);
-    console.log(res);
+    if (data) {
+      fetchBlockChain();
+      setAmount("");
+    }
   };
 
   return (
