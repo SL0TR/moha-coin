@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "237e988ff397690f5bd7122fd09e4ea2",
+    "revision": "9f5f16a76f8decf57f607970f423c154",
     "url": "/moha-coin/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moha-coin/static/js/2.fad768f2.chunk.js"
   },
   {
-    "revision": "d417a64b5ff934543755",
-    "url": "/moha-coin/static/js/main.efe3675c.chunk.js"
+    "revision": "57e3bc0a7405aac2fcc2",
+    "url": "/moha-coin/static/js/main.a4f1554f.chunk.js"
   },
   {
     "revision": "f8f5aab6c5da53b0a250",

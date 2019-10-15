@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/moha-coin/precache-manifest.7f94c7ff3e118248fe8e184971dfb937.js"
+  "/moha-coin/precache-manifest.ed4e4617c65f849954eb8b391124851c.js"
 );
 
 self.addEventListener('message', (event) => {

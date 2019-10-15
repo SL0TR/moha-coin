@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/moha-coin/static/js/main.efe3675c.chunk.js",
-    "main.js.map": "/moha-coin/static/js/main.efe3675c.chunk.js.map",
+    "main.js": "/moha-coin/static/js/main.a4f1554f.chunk.js",
+    "main.js.map": "/moha-coin/static/js/main.a4f1554f.chunk.js.map",
     "runtime-main.js": "/moha-coin/static/js/runtime-main.6b65cea1.js",
     "runtime-main.js.map": "/moha-coin/static/js/runtime-main.6b65cea1.js.map",
     "static/css/2.0624914a.chunk.css": "/moha-coin/static/css/2.0624914a.chunk.css",
     "static/js/2.fad768f2.chunk.js": "/moha-coin/static/js/2.fad768f2.chunk.js",
     "static/js/2.fad768f2.chunk.js.map": "/moha-coin/static/js/2.fad768f2.chunk.js.map",
     "index.html": "/moha-coin/index.html",
-    "precache-manifest.7f94c7ff3e118248fe8e184971dfb937.js": "/moha-coin/precache-manifest.7f94c7ff3e118248fe8e184971dfb937.js",
+    "precache-manifest.ed4e4617c65f849954eb8b391124851c.js": "/moha-coin/precache-manifest.ed4e4617c65f849954eb8b391124851c.js",
     "service-worker.js": "/moha-coin/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/moha-coin/static/css/2.0624914a.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.6b65cea1.js",
     "static/css/2.0624914a.chunk.css",
     "static/js/2.fad768f2.chunk.js",
-    "static/js/main.efe3675c.chunk.js"
+    "static/js/main.a4f1554f.chunk.js"
   ]
 }
