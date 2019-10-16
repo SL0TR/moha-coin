@@ -1,7 +1,7 @@
 import axios from "axios";
-// const url = `http://localhost:4000`;
-const url = `https://moha-coin.herokuapp.com`;
-const blockChainUrl = `${url}/blockchain`;
+const api = `http://localhost:4000/api`;
+// const api = `https://moha-coin.herokuapp.com/api`;
+const blockChainUrl = `${api}/blockchain`;
 
 export default {
   blockChain() {

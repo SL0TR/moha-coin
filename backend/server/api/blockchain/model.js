@@ -63,4 +63,4 @@ class BlockChain {
 module.exports = {
   BlockChain,
   Block
-}
+} 
