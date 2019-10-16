@@ -12,8 +12,6 @@ exports.post =  function(req, res) {
   // mutate data
   // mohaCoin.blockChain[1].data = { amount: 33 };
 
-  console.log(mohaCoin.isChainValid());
-
   if(mohaCoin.isChainValid()) {
     res.send(mohaCoin.getBlockChain());
   } else {
