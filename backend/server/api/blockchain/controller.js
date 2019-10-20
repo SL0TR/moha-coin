@@ -6,16 +6,21 @@ exports.post =  function(req, res) {
   const { body: blockData } = req;
 
   const {timeStamp, data } = blockData;
+  
+  let prevBlock = [...mohaCoin.blockChain];
 
   mohaCoin.addBlock( new Block(timeStamp, data));
-  
+
   // mutate data
   // mohaCoin.blockChain[1].data = { amount: 33 };
+
 
   if(mohaCoin.isChainValid()) {
     res.send(mohaCoin.getBlockChain());
   } else {
-    res.send('Block creation failed')
+    // console.log({ currBlock: mohaCoin.blockChain, prevBlock })
+    mohaCoin.blockChain = prevBlock;
+    res.status(403).send('Block registration auth failed!')
   }
 }
 
