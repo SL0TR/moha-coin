@@ -7,7 +7,7 @@ export default function MohaCoinList({ chain }) {
       <p className="lead text-center my-4">MohaCoin List!</p>
       {chain &&
         chain.map(block => (
-          <ListGroup.Item className="my-2" key={block.timeStamp}>
+          <ListGroup.Item className="my-2" key={block.hash}>
             ${block.data.amount}
           </ListGroup.Item>
         ))}

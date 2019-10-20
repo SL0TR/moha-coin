@@ -16,11 +16,15 @@ export default function AddCoin({ fetchBlockChain }) {
       }
     };
 
-    const { data } = await api.blockChain().create(blockData);
-
-    if (data) {
-      fetchBlockChain();
-      setAmount("");
+    try {
+      const { data } = await api.blockChain().create(blockData);
+      if (data) {
+        console.log(data);
+        fetchBlockChain();
+        setAmount("");
+      }
+    } catch (e) {
+      console.log(e);
     }
   };
 
